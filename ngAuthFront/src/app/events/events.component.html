@@ -1,0 +1,12 @@
+<div class="cards" >
+
+  <mat-card class="card" *ngFor="let event of events">
+    <mat-card-title class = "title" ><h2>{{event.name}}</h2></mat-card-title>
+    <mat-card-content class="desc mat-elevation-z2"><p>{{event.description}}</p></mat-card-content>
+    <a 
+    mat-raised-button color="primary"
+    class="button green" href="#">Comprar Ingresso</a>
+    <mat-card-footer class="footer">{{event.date | date:'shortDate'}}</mat-card-footer>
+  </mat-card>
+
+</div>

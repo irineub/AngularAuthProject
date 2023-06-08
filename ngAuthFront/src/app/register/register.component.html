@@ -1,0 +1,44 @@
+<form (ngSubmit)="registerUser()" [formGroup]="momentForm" #formDir="ngForm" class="formregister">
+  <h2>Registro</h2>
+
+    <input
+      placeholder="Nome"
+      class="name"
+      type="name"
+      [(ngModel)]="registerUserData.name"
+      formControlName="name"
+      name="name"
+      required
+    />
+    <div *ngIf="name.invalid && formDir.submitted"><p>Insira um Nome</p></div>
+
+    <input
+      
+      placeholder="E-mail"
+      class="email"
+      type="email"
+      [(ngModel)]="registerUserData.email"
+      formControlName="email"
+      name="email"
+      
+    />
+    <div *ngIf="email.invalid && formDir.submitted"><p>Insira um Email Valido</p></div>
+  <input
+    
+    placeholder="Senha"
+    class="senha"
+    type="password"
+    [(ngModel)]="registerUserData.password"
+    formControlName="password"
+    name="password"
+    required
+    minlength="4"
+  />
+  <div *ngIf="password.invalid && formDir.submitted"><p>Insira uma Senha com no minimo 4 caracteres</p></div>
+
+  <div class="rota">
+    <a routerLink="/login">Ja Sou Registrado</a>
+  </div>
+  <button type="submit">Registrar</button>
+  
+</form>

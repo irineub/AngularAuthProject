@@ -1,0 +1,28 @@
+<mat-toolbar class="header">
+    <span>
+    <a href="/"><h2 class="logo" >AngularAuth</h2>
+    </a>
+    </span>
+   <div  class="material-icons-outlined icon">
+    <a href="/"><mat-icon>lock</mat-icon></a>
+    </div> 
+  <span>
+ 
+      <div class="navOptions">
+        <a class="navOption" routerLink="/events" routerLinkActive="active">Events</a>
+     
+        <a class="navOption" routerLink="/special" routerLinkActive="active">Member</a>
+      </div>
+  </span>
+
+  <div class="logOptions">
+ 
+      <a class="login" *ngIf="!_authService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a>
+  
+      <a class="register"*ngIf="!_authService.loggedIn()" routerLink="/register" routerLinkActive="active">Register</a>
+
+      <a class="register" (click)="_authService.logoutUser()" *ngIf="_authService.loggedIn()">Logout</a>
+</div>
+
+</mat-toolbar>
+<router-outlet></router-outlet>

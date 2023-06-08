@@ -1,0 +1,37 @@
+<form (ngSubmit)="loginUser()" [formGroup]="momentForm" #formDir="ngForm" class="formlogin">
+    <h2>Login</h2>
+
+    <div class="ifng" *ngIf="email.invalid && formDir.submitted"><p>Insira um E-mail Valido</p></div>
+
+  <input
+    
+    placeholder="E-mail"
+    class="email"
+    type="email"
+    [(ngModel)]="loginUserData.email"
+    formControlName="email"
+    name="email"
+    
+  />
+  <div class="ifng" *ngIf="password.invalid && formDir.submitted"><p>Senha Invalida</p></div>
+<input
+  
+  placeholder="Senha"
+  class="senha"
+  type="password"
+  [(ngModel)]="loginUserData.password"
+  name="password"
+  formControlName="password"
+
+  required
+/>
+   
+    <div class="remember">
+        <a routerLink="/register" class="rota">Não possuo cadastro</a>
+
+    </div>
+        <button (click)="loginUser()">Entrar</button>
+        
+        <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+</form>

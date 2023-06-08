@@ -1,0 +1,101 @@
+
+.formlogin{
+    background-color: white;
+  }
+  form{
+  max-width: 360px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 15px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 7px 4px rgba(51,50,51,1);
+      -moz-box-shadow: 0px 0px 7px 4px rgba(51,50,51,1);
+      box-shadow: 0px 0px 7px 4px rgba(51,50,51,1);
+  }
+  h2{
+    text-align: center;
+    color: #000000;
+  }
+  .ifng{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 170px;
+    height: 20px;
+    text-align: center;
+    margin-left: 80px;
+    background-color: rgb(246, 149, 149);
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    justify-content: center;
+    
+}
+  .name{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 260px;
+    height: 35px;
+    border-radius: 8px;
+    padding-left: 10px;
+    border: 2px solid black;
+  }
+  .email{
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 35px;
+    border-radius: 8px;
+    padding-left: 10px;
+    border: 2px solid black;
+  }
+  .senha{
+    display: block;
+    margin: 20px auto;
+    margin-top: 10px;
+    height: 35px;
+    width: 260px;
+    border-radius: 8px;
+    padding-left: 10px;
+    border: 2px solid black;
+  }
+  
+  
+  .remember{
+    margin: 0 auto;
+  }
+  button{
+    display: block;
+    margin: 20px auto;
+    min-width: 280px;
+    height: 50px;
+    font-size: 16px;
+    background-color:#b6c1e7;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 22px;
+  
+  }
+  .rota{
+    margin-top: -15px;
+    margin-left: 200px;
+    font-size: small;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  h4{
+    text-decoration: underline;
+    text-align: center;
+    color: #c2063b;
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,102 @@
+
+a{
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: rgb(228, 230, 234);
+}
+
+.logo{  
+    text-align: center;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    margin-left: 15px;
+}
+.authResponsive{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        display: none
+    };
+    .authResponsive{
+        display:block;
+    }
+    .icon{
+        color: rgb(171, 197, 219);
+        padding-bottom: 7px;
+        margin-right: -25px;
+    }
+    
+.login{
+    margin-left: 15px;
+    padding-right: -10px;
+    font-size: small;
+}
+.register{
+    margin-left: -20px;
+    padding-right: 5px;
+    font-size: small;
+    
+
+}
+
+
+
+.navOptions {
+    margin-left: -10px;
+}
+
+
+} 
+    
+
+
+.icon{
+    padding-top: 7px;
+}
+.navOptions{
+    margin-left: 45px;
+}
+.navOption{
+    display: flexbox;
+    flex-direction:column;
+    margin-right: 20px;
+    padding: 2%;
+    font-size: large;
+    font-family: 'Fira Sans', sans-serif;    font-weight: 900;
+    color: rgba(172, 180, 194, 0.689);
+}
+.navOption:hover,
+ .login:hover,
+  .register:hover{
+    color: rgb(161, 183, 222);
+}
+
+.header{
+    background-image: linear-gradient( 76.3deg,  rgb(21, 29, 36) 12.6%, rgb(27, 39, 49) 82.8% );
+    padding-top: 10px;
+    padding-bottom: 10px;   
+        
+}
+.logOptions{
+    display: flex;
+    margin-right: 20px;
+    margin-left:auto
+}
+
+.login{
+    margin-right: 30px;
+    color: rgba(172, 180, 194, 0.689);
+}
+
+.register{
+    color: rgba(172, 180, 194, 0.689);
+}
+
+
+   .active{
+    color:rgb(161, 183, 222);
+
+}
